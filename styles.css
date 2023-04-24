@@ -1,0 +1,18 @@
+* {
+    padding: 0; /*tirar padding*/
+    margin: 0;  /*tirar margem*/
+    font-family: Helvetica; /*Fonte do projeto*/
+    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/cafe.png");
+    background-position: center;
+    background-size: cover; /*img se adpta a tela do user*/
+}
+
+button {
+    background-color: #fdfdfd ;
+    color: #102f5e;
+}
