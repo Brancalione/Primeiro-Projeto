@@ -1,24 +1,30 @@
-<!--Projeto TODO-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Estudo Entrevista</title>
+    <title>Lista de Estudo Bolsa</title>
+
     <!--CSS do projeto-->
-
-    <link rel="stylesheet" href="css/style.css"> <!--linkar css-->
-
-    <script src="js/scripts.js" defer></script> <!-- linkar js. defer faz com  que os arquivos carregem antes do html-->
+    <link rel="stylesheet" href="../Todo/CSS/styles.css"> 
+    
     <!--Biblioteca  font-awesome para adição de ícones-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    
+    <script src="js/scripts.js" defer></script> <!-- linkar js. defer faz com  que os arquivos carregem antes do html-->
+    
     <!--JS do projeto-->
 </head>
 <body>
     <div class="todo-container">
         <header>
-            <h1>Lista de Estudo Entrevista</h1>
+            <h1>Lista de Estudo Bolsa</h1>
         </header>
         <form  id="todo-form">
             <p>Adicione o conteúdo:</p>
@@ -32,7 +38,7 @@
                 </button>
             </div>
         </form>
-        <form id="edit-form" > <!-- Formulario de edição oculto-->
+        <form id="edit-form" class="hide"> <!-- Formulario de edição oculto-->
             <p>Edite sua tarefa</p>
             <div class="form-control">
                 <input type="text" id="edit-input">
@@ -42,30 +48,30 @@
             </div>
             <button id="cancel-edit-btn">Cancelar</button><!-- Botao para cancelar edição-->
         </form> 
-        <link rel="stylesheet" href="../Todo/img/cafe.png">
         <div id="toolbar"><!--Contem campo de pesquisa e filtro-->
-            <div id="search"></div>
-            <h4>Pesquisar:</h4>
-            <form>
-                <input 
-                type="text" 
-                id="search-input" 
-                placeholder="Buscar">
-                <button id="erase-button"> <!--Apagar o que usuário digitou-->
-                    <i class="fa-solid fa-delete-left"></i> <!--Ícone apagar-->
-                </button>
-            </form>
+            <div id="search">
+                <h4>Pesquisar:</h4>
+                <form>
+                  <input 
+                    type="text" 
+                    id="search-input" 
+                    placeholder="Buscar">
+                    <button id="erase-button"> <!--Apagar o que usuário digitou-->
+                        <i class="fa-solid fa-delete-left"></i> <!--Ícone apagar-->
+                    </button>
+                </form>
+            </div>
+            <div id="filter">
+                <h4>Filtrar:</h4> 
+                <select id="filter-select"><!--Botao de selecionar em tela-->
+                    <option value="All">Todos</option>
+                    <option value="done">Estudados</option>
+                    <option value="todo">A estudar</option>
+                </select>
+            </div>
         </div> 
-        <div id="filter">
-            <h4>Filtrar:</h4> 
-            <select id="filter-select"><!--Botao de selecionar em tela-->
-                <option value="All">Todos</option>
-                <option value="done">Estudados</option>
-                <option value="todo">A estudar</option>
-            </select>
-        </div>
         <div id="todo-list">
-            <div class="todo">
+            <div class="todo done">
                 <h3>Estou estudando...</h3>
                 <button class="finish-todo">
                     <i class="fa-solid fa-check"></i> <!--Ícone de check-->
@@ -78,6 +84,8 @@
                 </button>
             </div>
         </div>
-    </div
+        
+    </div>
+   
 </body>
 </html>
