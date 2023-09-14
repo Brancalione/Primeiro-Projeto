@@ -1,30 +1,28 @@
-/*Geral*/
+/*Zerar padrões navegador*/
 * {
-    padding: 0; /*tirar padding*/
-    margin: 0;  /*tirar margem*/
-    font-family: Helvetica; /*Fonte do projeto*/
+    padding: 0; 
+    margin: 0; 
+    font-family: Helvetica; 
     color: #333;
-    box-sizing: border-box; /*Pros inputs não passarem da largura maximados elementos pais */
+    box-sizing: border-box; 
 }
 body {
-    background-image: url("../img/Coffe.jpg");
-    background-position: center; /*imagem no centro da tela*/
-    background-size: cover; /*img se adpta a tela do user*/
+    background-image: url("background-image: url("Coffee_cinnamon_foam-Food_Theme_HD_Wallpaper_1366x768.jpg");");
+    background-position: center; 
+    background-size: cover; 
 }
 button {
     background-color: #fdfdfd ;
     color: #4272a9;
     border: 2px solid #4272a9 ;
-    padding: .3rem .6rem; /*deixa padrão para expandir em varias telas*/
-    font-size: 1rem; /*tamanho da fonte se adapta*/
-    cursor: pointer; /*para a mãozinha quando passar em cima de um botao/*/
+    padding: .3rem .6rem; 
+    font-size: 1rem; 
+    cursor: pointer; 
     display: flex;
     justify-content: center;
-    align-items: center; /*centralizar o icone do botao*/
+    align-items: center; 
     transition: 0.4s;
 }
-
-/*mudar cor e dentro do botão*/
 button:hover {
     background-color: #4272a9;
     color: #fff;
@@ -35,7 +33,7 @@ button:hover > i {
 button i {
     color: #4272a9;
     font-weight: bold;
-    pointer-events: nome; /*Se clicar no ícone, é como se tiver clicando no botao*/ 
+    pointer-events: nome;  
 }
 input, select {
     padding: 0.25rem 0.5rem;
@@ -46,16 +44,15 @@ input, select {
 
 /* cabeçalho todo*/
 .todo-container {
-    max-width: 450px; /* largura  */
-    margin: 3rem auto; /* margem 3 do topo e  0 dos lados*/
+    max-width: 450px; 
+    margin: 3rem auto; 
     background-color: #fdfdfd; 
-    padding: 1.5rem;  /* tirar elementos das extremidades*/
+    padding: 1.5rem;  
     border-radius: 15px; 
 }
 .todo-container header {
     text-align: center;
     padding: 0 1rem 1rem;
-    /*border-bottom: 1px solid #ccc;*/
 }
 #todo-form, #edit-form { 
     padding: 1rem;
@@ -80,7 +77,7 @@ input, select {
 #toolbar {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
-    display: flex; /* formulario de filtro e de pesquisa ficarem um do lado do outro*/
+    display: flex;
 }
 #toolbar h4 {
     margin-bottom: 5.rem;
@@ -110,8 +107,8 @@ input, select {
 }
 .todo {
     display: flex;
-    justify-content: space-around; /*espaça os ícones de botao*/
-    align-items: center; /* centralizar os itens na vertical*/
+    justify-content: space-around; 
+    align-items: center; 
     padding: 1rem;
     border-bottom: 1px solid #ddd;
     transition: 0.3s;
@@ -121,7 +118,7 @@ input, select {
     font-size: .9rem;
 }
 .todo button {
-    margin-left: 0.4rem; /*afastar todos os botoes*/
+    margin-left: 0.4rem; 
 }
 .done {
     background-color: #395169;
